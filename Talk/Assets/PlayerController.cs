@@ -55,4 +55,9 @@ public class PlayerController : MonoBehaviour
                 Destroy(gameObject);
         }
     }
+
+    private void OnDestroy()
+    {
+        Time.timeScale = 0;
+    }
 }
